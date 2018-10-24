@@ -3,7 +3,7 @@
 //! author : Kodie Grantham : https://github.com/kodie
 
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment');
 
   moment.holidays.finland = {
     "Uudenvuodenpäivä": {
@@ -52,5 +52,5 @@
     }
   };
 
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
+  module.exports = moment;
 }).call(this);

@@ -31,7 +31,7 @@
 */
 
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment');
 
   moment.holidays.switzerland = {
     "Neujahrstag": {
@@ -177,5 +177,5 @@
     }
   };
 
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
+  module.exports = moment;
 }).call(this);

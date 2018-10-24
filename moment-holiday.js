@@ -595,5 +595,5 @@
     }
   };
 
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
+  module.exports = moment;
 }).call(this);

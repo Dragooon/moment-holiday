@@ -3,7 +3,7 @@
 //! author : wonder2991 : https://github.com/wonder2991
 
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment');
 
   moment.holidays.india = {
     "New Year's Day": {
@@ -36,5 +36,5 @@
     }
   };
 
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
+  module.exports = moment;
 }).call(this);
